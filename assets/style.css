@@ -50,7 +50,6 @@
   
   header h1 {
     color: var(--secondary);
-    /* background-color: var(--secondary); */
     padding: 5px 1% 5px 6%;
     margin: 0;
     font-size: 4vw;
@@ -101,11 +100,20 @@
     background-blend-mode: soft-light;
     min-height: 30vh;
     color: var(--light);
-    padding: 2% 6%;
+    /* padding: 2% 6%; */
+    padding-top: 2%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+    padding-left: 2%;
     display: flex;
-    justify-content: flex-end;
+  
+    /* justify-content: flex-end; */
     align-items: flex-end;
     text-align: right;
+  }
+
+  .me{
+    max-width: 16%;
   }
   
   .hero-banner div {
@@ -121,16 +129,7 @@
     display: inline;
   }
 
-  /* Tools Styling */
-  #tools h2{
-    font-size: 20px;
-  }
-  
-  /* .icon p{
-    font-size: 20px;
-    text-align:center
-  } */
-  
+
   /* About me and work section */
   .page-wrapper {
     max-width: 88%;
@@ -282,6 +281,14 @@
     header nav {
       justify-content: center;
     }
+
+    .hero-banner{
+      padding-right: 20%;
+    }
+
+    .me{
+      max-width: 30%;
+    }
   
     .page-section > h2,
     .page-section > div {
@@ -311,12 +318,43 @@
     .hero-banner {
       justify-content: center;
       text-align: center;
+      flex-wrap: wrap;
     }
   
     .contact address {
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .me{
+      max-width: 40%;
+    }
+
+    .hero-banner{
+      padding-left: 20%;
+    }
+
+    .hero-banner h2{
+      justify-content: center;
+      font-size: large;
+      display: flex;
+    }
+    
   }
 
-  
+  @media screen and (max-width: 575px) {
+    .hero-banner h2{
+      justify-content: center;
+      font-size: large;
+    }
+
+    .me{
+      max-width: 40%;
+    }
+
+    #tools{
+        font-size: 15px;
+    }
+
+  }
+
