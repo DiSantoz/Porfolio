@@ -138,6 +138,7 @@
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 1.1;
+    
   }
   
   .page-section > div {
@@ -218,6 +219,7 @@
     background-size: 100% 88%;
     color: var(--secondary);
   }
+  
   
   /* portfolio project images */
   .brokers {
