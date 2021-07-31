@@ -33,6 +33,7 @@
     margin: 0;
   }
   
+  /* Name and Nav Bar */
   header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -52,7 +53,8 @@
     font-size: 4vw;
     line-height: 1;
   }
-  
+
+  /*Nav Bar  */
   nav {
     display: flex;
     flex-direction: row;
@@ -81,11 +83,13 @@
     margin-right: 0;
   }
   
+  
   main {
     margin-top: 20px;
     margin-bottom: 45px;
   }
   
+  /* Photo of me and description */
   .hero-banner {
     background: rgb(42, 51, 65);
     background-image: url("./images/banner.png"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -106,7 +110,6 @@
   }
   
   .hero-banner h2 {
-    /* background-color: var(--secondary); */
     color: var(--secondary);
     margin: 0;
     padding: 5px 10px;
@@ -114,7 +117,17 @@
     line-height: 1.2;
     display: inline;
   }
+
+  /* Tools Styling */
+  #tools h2{
+    font-size: 20px;
+  }
   
+  .icon p{
+    font-size: 20px;
+  }
+  
+  /* About me and work section */
   .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -191,7 +204,12 @@
   .flex-item h3 {
     font-size: 1.6rem;
   }
-  
+
+  /* Contact info */
+   .contact{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+  }
   .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -201,12 +219,12 @@
   }
   
   .contact address a {
-    color: var(--tertiary);
+    color: var(--secondary);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
     font-style: normal;
-    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: bottom;
@@ -217,10 +235,9 @@
   
   .contact address a:hover {
     background-size: 100% 88%;
-    color: var(--secondary);
+    color: var(--primary);
   }
-  
-  
+
   /* portfolio project images */
   .brokers {
     background-image: url("./images/broker.png");
