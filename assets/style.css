@@ -8,7 +8,7 @@
     --secondary: rgba(146, 204, 206, 1);
     --tertiary: rgba(49, 52, 61, 1);
     --dark: rgba(28, 29, 33, 1);
-    --light: rgba(238, 238, 247, 1);
+    --light: rgb(219, 219, 226);
   }
   
   body {
@@ -45,8 +45,8 @@
   }
   
   header h1 {
-    color: var(--tertiary);
-    background-color: var(--secondary);
+    color: var(--secondary);
+    /* background-color: var(--secondary); */
     padding: 5px 1% 5px 6%;
     margin: 0;
     font-size: 4vw;
@@ -106,8 +106,8 @@
   }
   
   .hero-banner h2 {
-    background-color: var(--secondary);
-    color: var(--tertiary);
+    /* background-color: var(--secondary); */
+    color: var(--secondary);
     margin: 0;
     padding: 5px 10px;
     font-size: 25px;
@@ -220,26 +220,26 @@
   }
   
   /* portfolio project images */
-  .reci {
-    background-image: url("./images/recip.jpg");
-  }
-  
-  .esequel {
-    background-image: url("./images/insomnia.png");
-  }
-  
-  .jotit {
-    background-image: url("./images/landing.png");
-  }
-  
-  .nodeteam {
-    background-image: url("./images/result.png");
-  }
-  
   .brokers {
     background-image: url("./images/broker.png");
   }
   
+  .reci {
+    background-image: url("./images/recip.jpg");
+  }
+
+  .jotit {
+    background-image: url("./images/landing.png");
+  }
+   
+  .nodeteam {
+    background-image: url("./images/result.png");
+  }
+
+  .esequel {
+    background-image: url("./images/insomnia.png");
+  }
+
   /* end portfolio project images */
   
   @media screen and (max-width: 980px) {
@@ -296,5 +296,4 @@
     }
   }
 
-  
   
