@@ -348,12 +348,17 @@
       font-size: large;
     }
 
+    header nav a{
+      justify-content: center;
+      font-size: 15px;
+    }
+
     .me{
       max-width: 40%;
     }
 
     #tools{
-        font-size: 15px;
+        font-size: 11px;
     }
 
   }
