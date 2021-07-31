@@ -220,8 +220,8 @@
   }
   
   /* portfolio project images */
-  .run-buddy {
-    background-image: url("../images/02-run-buddy.jpg");
+  .reci {
+    background-image: url("./images/recip.jpg");
   }
   
   .led-wall {
@@ -236,8 +236,8 @@
     background-image: url("../images/02-portfolio-3.jpg");
   }
   
-  .surf-report {
-    background-image: url("../images/02-portfolio-4.jpg");
+  .brokers {
+    background-image: url("./images/broker.png");
   }
   
   /* end portfolio project images */
