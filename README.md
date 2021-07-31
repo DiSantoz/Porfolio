@@ -4,7 +4,7 @@
 
 My portfolio show cases some of my projects and group projects! Get a glance of my work by viewing the deployed applications and take a look at my code via github. If you like what you see, please feel free to contact me! I am always looking to connect!
 
-**Check out my [Portfolio!](https://disantoz.github.io/Porfolio/)**
+**Check out my <a href="https://disantoz.github.io/Porfolio/" target="_blank">Portfolio!</a>**
 
   ## Table of Contents
   * [Usage](#usage)
