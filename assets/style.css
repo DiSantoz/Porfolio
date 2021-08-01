@@ -207,16 +207,28 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .flex-item div {
+  .descrip {
     background-color: var(--secondary);
     padding: 8px 10px;
   }
   
-  .flex-item h3 {
+  .descrip h3 {
     font-size: 1.6rem;
     font-family: 'Staatliches', cursive;
   }
 
+  /* .link{
+    display: flex;
+    justify-content: space-around;
+  } */
+
+  .buttons{
+    background-color: var(--secondary);
+    padding: 8px 10px;
+    font-size: 1rem;
+    font-family: 'Staatliches', cursive;
+    color: var(--tertiary);
+  }
   /* Contact info */
    .contact{
     background-color: var(--tertiary);
