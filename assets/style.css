@@ -54,6 +54,7 @@
     margin: 0;
     font-size: 4vw;
     line-height: 1;
+    font-family: 'Teko', sans-serif;
   }
 
   /*Nav Bar  */
@@ -74,6 +75,7 @@
     background-position: bottom;
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
+    font-family: 'Teko', sans-serif;
   }
   
   nav a:hover {
@@ -127,6 +129,7 @@
     font-size: 25px;
     line-height: 1.2;
     display: inline;
+    
   }
 
 
@@ -135,6 +138,10 @@
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .page-wrapper{
+    font-family: 'Padauk', sans-serif;
   }
   
   .page-section {
@@ -154,6 +161,7 @@
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 1.1;
+    font-family: 'Teko', sans-serif;
     
   }
   
@@ -206,12 +214,14 @@
   
   .flex-item h3 {
     font-size: 1.6rem;
+    font-family: 'Teko', sans-serif;
   }
 
   /* Contact info */
    .contact{
     background-color: var(--tertiary);
     color: var(--secondary);
+    font-family: 'Teko', sans-serif;
   }
   .contact address {
     display: flex;
