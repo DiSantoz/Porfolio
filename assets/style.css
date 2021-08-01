@@ -1,409 +1,396 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+/* brand color palette */
+:root {
+  --primary: rgba(68, 88, 119, 1);
+  --secondary: rgba(146, 204, 206, 1);
+  --tertiary: rgba(49, 52, 61, 1);
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgb(219, 219, 226);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Name and Nav Bar */
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--tertiary);
+  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1 {
+  color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+  font-family: 'Staatliches', cursive;
+}
+
+/*Nav Bar  */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+  font-family: 'Staatliches', cursive;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+/* Photo of me and description */
+.hero-banner {
+  background: rgb(42, 51, 65);
+  background-image: url("./images/banner.png"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  /* padding: 2% 6%; */
+  padding-top: 2%;
+  padding-right: 6%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  display: flex;
+
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  text-align: right;
+}
+
+.me{
+  max-width: 16%;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+  color: var(--secondary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 25px;
+  line-height: 1.2;
+  display: inline;
   
-  /* brand color palette */
-  :root {
-    --primary: rgba(68, 88, 119, 1);
-    --secondary: rgba(146, 204, 206, 1);
-    --tertiary: rgba(49, 52, 61, 1);
-    --dark: rgba(28, 29, 33, 1);
-    --light: rgb(219, 219, 226);
-  }
+}
+
+
+/* About me and work section */
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wrapper{
+  font-family: 'Padauk', sans-serif;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+  font-family: 'Staatliches', cursive;
   
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary);
-    background-color: var(--light);
-    line-height: 1.5;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  /* Name and Nav Bar */
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+  font-family: 'Staatliches', cursive;
+}
+
+/* Contact info */
+ .contact{
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  font-family: 'Staatliches', cursive;
+}
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--secondary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--primary);
+}
+
+/* portfolio project images */
+.brokers {
+  background-image: url("./images/broker.png");
+}
+
+.reci {
+  background-image: url("./images/recip.jpg");
+}
+
+.jotit {
+  background-image: url("./images/jotit.png");
+}
+ 
+.nodeteam {
+  background-image: url("./images/nodeteam.png");
+}
+
+.esequel {
+  background-image: url("./images/esequel.png");
+}
+
+/* end portfolio project images */
+
+@media screen and (max-width: 980px) {
   header {
-    padding: 15px 6% 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--tertiary);
-    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
-  }
-  
-  header h1 {
-    color: var(--secondary);
-    padding: 5px 1% 5px 6%;
-    margin: 0;
-    font-size: 4vw;
-    line-height: 1;
-    font-family: 'Staatliches', cursive;
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
   }
 
-  /*Nav Bar  */
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
   }
-  
-  nav a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: var(--secondary);
-    margin-right: 10px;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-    font-size: 1.4rem;
-    font-family: 'Staatliches', cursive;
+
+  header nav {
+    justify-content: center;
   }
-  
-  nav a:hover {
-    background-size: 100% 100%;
-    color: var(--primary);
-  }
-  
-  nav a:last-child {
-    margin-right: 0;
-  }
-  
-  
-  main {
-    margin-top: 20px;
-    margin-bottom: 45px;
-  }
-  
-  /* Photo of me and description */
-  .hero-banner {
-    background: rgb(42, 51, 65);
-    background-image: url("./images/banner.png"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: soft-light;
-    min-height: 30vh;
-    color: var(--light);
-    /* padding: 2% 6%; */
-    padding-top: 2%;
-    padding-right: 6%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    display: flex;
-  
-    /* justify-content: flex-end; */
-    align-items: flex-end;
-    text-align: right;
+
+  .hero-banner{
+    padding-right: 20%;
   }
 
   .me{
-    max-width: 16%;
-  }
-  
-  .hero-banner div {
-    flex: 0 0 90%;
-  }
-  
-  .hero-banner h2 {
-    color: var(--secondary);
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 25px;
-    line-height: 1.2;
-    display: inline;
-    
+    max-width: 30%;
   }
 
-
-  /* About me and work section */
-  .page-wrapper {
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .page-wrapper{
-    font-family: 'Padauk', sans-serif;
-  }
-  
-  .page-section {
-    margin: 25px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-  
-  .page-section > h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--primary);
-    font-size: 4vw;
-    line-height: 1.1;
-    font-family: 'Staatliches', cursive;
-    
-  }
-  
+  .page-section > h2,
   .page-section > div {
-    flex: 0 0 77%;
+    flex: 0 0 100%;
   }
-  
-  .page-section p {
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
   }
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .flex-item {
-    border: 5px solid var(--secondary);
-    background-color: var(--primary);
-    color: var(--tertiary);
-    min-height: 150px;
-    max-height: 150px;
-    flex-basis: calc(50% - 1em);
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    margin: 0.5em;
-    text-decoration: none;
-    background-blend-mode: soft-light;
-    background-size: 150%;
-    transition: all 0.5s;
-    font-size: 0.9rem;
-  }
-  
-  /* feature first portfolio item */
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
   .flex-item:first-child {
-      min-height: 400px;
-      flex-basis: 100%;
-  }
-  
-  .flex-item:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .descrip {
-    background-color: var(--secondary);
-    padding: 8px 10px;
-  }
-  
-  .descrip h3 {
-    font-size: 1.6rem;
-    font-family: 'Staatliches', cursive;
+    flex-basis: 100%;
   }
 
-  /* .link{
-    display: flex;
-    justify-content: space-around;
-  } */
+  .flex-item:first-child {
+    min-height: 150px;
+  }
 
-  .buttons{
-    background-color: var(--secondary);
-    padding: 8px 10px;
-    font-size: 1rem;
-    font-family: 'Staatliches', cursive;
-    color: var(--tertiary);
-  }
-  /* Contact info */
-   .contact{
-    background-color: var(--tertiary);
-    color: var(--secondary);
-    font-family: 'Staatliches', cursive;
-  }
-  .contact address {
-    display: flex;
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .contact address a {
-    color: var(--secondary);
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-style: normal;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-    margin: 0 0.2rem 0.1rem;
-    display: inline-block;
-  }
-  
-  .contact address a:hover {
-    background-size: 100% 88%;
-    color: var(--primary);
   }
 
-  /* portfolio project images */
-  .brokers {
-    background-image: url("./images/broker.png");
-  }
-  
-  .reci {
-    background-image: url("./images/recip.jpg");
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .jotit {
-    background-image: url("./images/jotit.png");
-  }
-   
-  .nodeteam {
-    background-image: url("./images/nodeteam.png");
+  .me{
+    max-width: 40%;
   }
 
-  .esequel {
-    background-image: url("./images/esequel.png");
+  .hero-banner{
+    padding-left: 20%;
   }
 
-  /* end portfolio project images */
-  
-  @media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
-    }
-  
-    header nav {
-      justify-content: center;
-    }
-
-    .hero-banner{
-      padding-right: 20%;
-    }
-
-    .me{
-      max-width: 30%;
-    }
-  
-    .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
-    }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
+  .hero-banner h2{
+    justify-content: center;
+    font-size: large;
+    display: flex;
   }
   
-  @media screen and (max-width: 768px) {
-    .flex-item,
-    .flex-item:first-child {
-      flex-basis: 100%;
-    }
-  
-    .flex-item:first-child {
-      min-height: 150px;
-    }
-  
-    .hero-banner {
-      justify-content: center;
-      text-align: center;
-      flex-wrap: wrap;
-    }
-  
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+}
 
-    .me{
-      max-width: 40%;
-    }
-
-    .hero-banner{
-      padding-left: 20%;
-    }
-
-    .hero-banner h2{
-      justify-content: center;
-      font-size: large;
-      display: flex;
-    }
-    
+@media screen and (max-width: 575px) {
+  .hero-banner h2{
+    justify-content: center;
+    font-size: large;
   }
 
-  @media screen and (max-width: 575px) {
-    .hero-banner h2{
-      justify-content: center;
-      font-size: large;
-    }
-
-    header nav a{
-      justify-content: center;
-      font-size: 15px;
-    }
-
-    .me{
-      max-width: 40%;
-    }
-
-    #tools{
-        font-size: 11px;
-    }
-
+  header nav a{
+    justify-content: center;
+    font-size: 15px;
   }
 
-  @media screen and (max-width: 375px) {
-    .hero-banner h2{
-      justify-content: center;
-      font-size: large;
-    }
-
-    header nav a{
-      justify-content: center;
-      font-size: 15px;
-    }
-
-    .me{
-      max-width: 50%;
-    }
-
-    #tools{
-        font-size: 8px;
-    }
-
+  .me{
+    max-width: 40%;
   }
 
+  #tools{
+      font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .hero-banner h2{
+    justify-content: center;
+    font-size: large;
+  }
+
+  header nav a{
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .me{
+    max-width: 50%;
+  }
+
+  #tools{
+      font-size: 8px;
+  }
+
+}
 
