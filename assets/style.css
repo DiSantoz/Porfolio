@@ -54,7 +54,7 @@
     margin: 0;
     font-size: 4vw;
     line-height: 1;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Staatliches', cursive;
   }
 
   /*Nav Bar  */
@@ -75,7 +75,7 @@
     background-position: bottom;
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Staatliches', cursive;
   }
   
   nav a:hover {
@@ -161,7 +161,7 @@
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 1.1;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Staatliches', cursive;
     
   }
   
@@ -214,14 +214,14 @@
   
   .flex-item h3 {
     font-size: 1.6rem;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Staatliches', cursive;
   }
 
   /* Contact info */
    .contact{
     background-color: var(--tertiary);
     color: var(--secondary);
-    font-family: 'Teko', sans-serif;
+    font-family: 'Staatliches', cursive;
   }
   .contact address {
     display: flex;
