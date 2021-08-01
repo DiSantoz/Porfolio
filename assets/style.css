@@ -179,7 +179,7 @@
     justify-content: center;
   }
   
-  .flex-item {
+  /* .flex-item {
     border: 5px solid var(--secondary);
     background-color: var(--primary);
     color: var(--tertiary);
@@ -195,15 +195,15 @@
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
-  }
+  } */
   
   /* feature first portfolio item */
-  .flex-item:first-child {
+  /* .flex-item:first-child {
       min-height: 400px;
       flex-basis: 100%;
-  }
+  } */
   
-  .flex-item:hover {
+  /* .flex-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
@@ -215,7 +215,20 @@
   .flex-item h3 {
     font-size: 1.6rem;
     font-family: 'Teko', sans-serif;
+  } */
+
+  .work{
+    border: 5px solid var(--secondary);
   }
+
+  .card-body h3, span{
+    font-size: 1.6rem;
+    font-family: 'Teko', sans-serif;
+    background-color:var(--secondary);
+    display: table;
+  } 
+
+
 
   /* Contact info */
    .contact{
