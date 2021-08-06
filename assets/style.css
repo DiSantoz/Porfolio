@@ -252,21 +252,22 @@
   }
 
   /* portfolio project images */
-  .brokers {
-    background-image: url("./images/broker.png");
-  }
+.tech-space{
+  background-image: url("./images/tech-space.png");
+  background-size: 100% 100%;
+}
   
   .reci {
     background-image: url("./images/recip.jpg");
   }
 
+  .brokers {
+    background-image: url("./images/broker.png");
+  }
   .jotit {
     background-image: url("./images/jotit.png");
   }
    
-  .nodeteam {
-    background-image: url("./images/nodeteam.png");
-  }
 
   .esequel {
     background-image: url("./images/esequel.png");
